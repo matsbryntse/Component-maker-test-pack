@@ -25,21 +25,8 @@ StartTest(function(t) {
             t.endAsync(as);
             t.ok(My.view.ScrumPanel, "My.view.ScrumPanel is here")
 
-            var userStore = new Ext.data.Store({
-                model : 'DEMO.model.User',
-                proxy : 'memory'
-            })
-
-            var taskStore = new Ext.data.Store({
-                model : 'DEMO.model.Task',
-                proxy : 'memory'
-            });
-
-
             new My.view.ScrumPanel({
-                renderTo : document.body,
-                userStore : userStore,
-                taskStore : taskStore
+                renderTo : document.body
             })
         })
     })

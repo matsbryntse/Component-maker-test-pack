@@ -1,8 +1,10 @@
 StartTest(function(t) {
 
+    // YOUR COMPONENT CSS PREFIX
+    var scopingRe = /scrum-/;
+
     var isGarbageBrowser = !Object.keys || ![].forEach;
     var found = 0;
-    var scopingRe = /scrum-/;
     var rules = Object.keys(Ext.util.CSS.getRules(true));
 
     if (isGarbageBrowser) return;

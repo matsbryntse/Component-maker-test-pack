@@ -3,6 +3,7 @@
  */
 
 var Harness = Siesta.Harness.Browser.ExtJS;
+var extRoot = '../../extjs-4.2.0/';
 
 Harness.configure({
     title : 'Awesome Component Test Suite',
@@ -11,12 +12,14 @@ Harness.configure({
     autoCheckGlobals : true,
     keepResults      : false,
     expectedGlobals  : [
+        // YOUR GLOBAL NAMESPACE SHOULD GO HERE
         'My'
     ],
 
+    // LIST YOUR FRAMEWORK EPENDENCIES FIRST, THEN YOUR APPLICATION FILES
     preload : [
-        '../../extjs-4.2.0/ext-all-debug.js',
-        '../../extjs-4.2.0/resources/css/ext-all.css',
+        extRoot + 'ext-all-debug.js',
+        extRoot + 'resources/css/ext-all.css',
 
         // Your CSS file(s), normally you'd have your myapp-all-debug.css here
         '../resources/css/ScrumPanel.css',
@@ -36,7 +39,7 @@ Harness.start({
         'sanity/010_sanity.t.js',
         {
             url     : 'sanity/011_on_demand.t.js',
-            preload : [ "../../extjs-4.2.0/ext-debug.js" ]
+            preload : [ extRoot + "ext-debug.js" ]
         },
         'sanity/012_no_overrides.t.js',
         {
@@ -46,7 +49,7 @@ Harness.start({
         {
             url     : 'sanity/014_unscoped_css_rules.t.js',
             preload : [
-                '../../extjs-4.2.0/ext-all-debug.js',
+                extRoot + 'ext-all-debug.js',
                 '../resources/css/ScrumPanel.css'
             ]
         },

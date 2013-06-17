@@ -1,5 +1,7 @@
 StartTest(function(t) {
 
+    var cssPrefix = "scrum-";
+
     // clear any existing components created by Ext
     Ext.each(t.cq('*'), function(c) {c.destroy(); })
 
@@ -17,7 +19,7 @@ StartTest(function(t) {
             t.selectorNotExists('[id*="null"]', 'No "null" ids found in DOM')
 
             panel.destroy();
-            t.selectorNotExists('[class*="scrum-"]', 'No scrum-XXX selectors found in DOM')
+            t.selectorNotExists('[class*="' + cssPrefix + '"]', 'No ' + cssPrefix + 'XXX selectors found in DOM')
             t.isDeeply(t.cq('*'), [], 'Should not find any components after destroy')
         }
     )
