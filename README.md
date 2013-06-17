@@ -15,7 +15,7 @@ These 10 sanity tests will assert that:
 3. Your component doesn't create any global Ext JS overrides
 4. It passes basic JsHint rules (no syntax errors, trailing commas, debugger; statements etc)
 5. It does not use global style rules ('.x-panel' etc)
-6. Can be sub-classed
+6. It can be sub-classed
 7. It does not leak any additional components or dom elements
 8. It doesn't override any private Ext JS methods in your component superclasses
 9. It can be created, destroyed with and without being rendered first
