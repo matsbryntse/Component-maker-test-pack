@@ -10,7 +10,7 @@ idea of how the smoke test suite can be useful. See the /examples/ folder for a 
 
 These 10 sanity tests will assert that:
 
-1. Your namespace is created (build was succesful) and that your component has the expected alias.
+1. Your namespace is created (build was succesful) and that your component has the expected alias. Checks for global variable leaks are also made.
 2. Your component can be loaded on demand with Ext.Loader (using ext-debug.js)
 3. Your component doesn't create any global Ext JS overrides
 4. It passes basic JsHint rules (no syntax errors, trailing commas, debugger; statements etc)
