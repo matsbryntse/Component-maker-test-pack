@@ -57,5 +57,6 @@ Harness.start({
             url         : 'sanity/017_private_method_overrides.t.js'
         },
         'sanity/018_lifecycle.t.js',
+        'sanity/019_monkey_test.t.js'
     ]
 });

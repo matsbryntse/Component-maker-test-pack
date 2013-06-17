@@ -155,7 +155,8 @@
     border:1px solid #bababa;
     padding: 1px;
     border-radius: 2px;
-    background: #fff;
+    background: #fff url(../images/user.png) no-repeat center center;
+    opacity: 0.6;
 }
 
 .scrum-no-img
@@ -187,4 +188,6 @@
     background-size: contain;
     opacity: 1;
 }
+
+
 

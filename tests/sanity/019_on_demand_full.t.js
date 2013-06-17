@@ -1,3 +1,0 @@
-StartTest(function(t) {
-
-})    
