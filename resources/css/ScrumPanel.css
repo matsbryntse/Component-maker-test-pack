@@ -1,0 +1,190 @@
+.scrum-scrumpanel
+{
+    background: transparent;
+}
+
+.scrum-scrumcolumn
+{
+    border-radius: 5px;
+    background-color: #D7D2D2;
+    background-image: -moz-linear-gradient(center top , #F0F0F0, #D7D7D7);
+    background-image: -webkit-linear-gradient(top , #F0F0F0, #D7D7D7);
+}
+
+.scrum-scrumcolumn .x-panel-header-text
+{
+    font-size: 1.4em;
+    color:#666;
+    margin: 5px;
+    display: block;
+}
+
+.scrum-scrumcolumn .x-panel-body,
+.scrum-scrumcolumn .x-panel-header
+{
+    background: transparent;
+    border-color: transparent;
+}
+
+.scrum-scrumcolumn .x-panel-body
+{
+    padding-top:10px;
+}
+
+/* Task element styling */
+.scrum-task
+{
+    border-radius:4px;
+    box-shadow:1px 1px 1px rgba(150, 150, 150, 0.2);
+    border: 1px solid #ccc;
+    color:#888;
+    cursor:pointer;
+    margin:0 5px 7px 5px;
+    background: #fff;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.scrum-hidden
+{
+    height: 0;
+    margin:0;
+    padding:0;
+    border:0 none;
+    overflow: hidden;
+}
+
+
+.scrum-task-over
+{
+    background: #eff;
+    border: 1px solid #bbb;
+}
+
+.scrum-scrumcolumn .x-item-selected
+{
+    border-color:royalblue;
+    background: #7b68ee;
+}
+
+.scrum-scrumcolumn .x-item-selected .scrum-task-name
+{
+    color:#fff;
+    text-shadow: 1px 1px 1px navy;
+}
+
+
+.scrum-tool-ct
+{
+    float:left;
+    width:90%;
+    margin-left:15px;
+    margin-bottom:5px;
+}
+
+.scrum-tool
+{
+    margin-top: 7px;
+    float:left;
+    width:16px;
+    height:16px;
+    padding: 0 10px 0 15px;
+    font-size: 9px;
+    line-height: 12px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+
+.scrum-tool:hover
+{
+    background-color:#ddd;
+    border-color:#bbb;
+}
+
+.scrum-task-name
+{
+    margin-left:15px;
+    margin-top:3px;
+}
+
+.scrum-tool-comment
+{
+    background: #eee url(../images/comment.png) no-repeat 2px center;
+    background-size:10px;
+}
+
+.scrum-color
+{
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    width: 7px;
+    position: absolute;
+    height: 100%;
+}
+
+/* EOF Task element styling */
+
+
+.state-0 .scrum-color
+{
+    background: brown;
+}
+
+.state-1 .scrum-color
+{
+    background: rgb(231, 168, 75);
+}
+
+.state-2 .scrum-color
+{
+    background: lightblue;
+}
+
+.state-3 .scrum-color
+{
+    background: lightgreen;
+}
+
+.scrum-user-avatar
+{
+    position: absolute;
+    bottom:-4px;
+    right:-4px;
+    width:20px;
+    height:20px;
+    border:1px solid #bababa;
+    padding: 1px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.scrum-no-img
+{
+    display: none;
+    opacity: 0.6;
+}
+
+.scrum-task-over .scrum-no-img
+{
+    display: block;
+}
+
+.scrum-no-img:hover
+{
+    opacity: 1;
+}
+
+.scrum-usermenu .x-menu-item-icon
+{
+    background: transparent url(../images/user.png) no-repeat center center;
+    background-size: contain;
+    opacity: 0.4;
+}
+
+.scrum-user-selected .x-menu-item-icon
+{
+    background: transparent url(../images/user_sel.png) no-repeat center center;
+    background-size: contain;
+    opacity: 1;
+}
+
