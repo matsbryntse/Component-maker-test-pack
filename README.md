@@ -3,7 +3,7 @@ Component Maker Test Pack
 
 This is a great getting started test pack for anyone creating custom components for Ext JS or Sencha Touch. This will help yourself and anyone
 that will use your component to assert that your component works fine as new releases of it are shipped. It'll also be a good asset when
-you try to support a new version of Ext JS. Note that these are only basic smoke tests, which are not a replacement for unit test or functional tests.
+you try to support a new version of Ext JS. Note that these are only basic smoke tests, which are not a replacement for unit tests or functional tests.
 
 Included in this repo is a sample component (in the /lib/ folder) which consists of a few JS classes and a CSS class. This is just to give you an
 idea of how the smoke test suite can be useful. See the /examples/ folder for a simple demo of the component.
